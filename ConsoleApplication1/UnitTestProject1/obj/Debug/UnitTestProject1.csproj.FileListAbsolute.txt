@@ -1,0 +1,7 @@
+D:\YandexDisk\Учеба\Семестр 8\работа\ООО «УГМК-Транс»\ConsoleApplication1\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+D:\YandexDisk\Учеба\Семестр 8\работа\ООО «УГМК-Транс»\ConsoleApplication1\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+D:\YandexDisk\Учеба\Семестр 8\работа\ООО «УГМК-Транс»\ConsoleApplication1\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+D:\YandexDisk\Учеба\Семестр 8\работа\ООО «УГМК-Транс»\ConsoleApplication1\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+D:\YandexDisk\Учеба\Семестр 8\работа\ООО «УГМК-Транс»\ConsoleApplication1\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+D:\YandexDisk\Учеба\Семестр 8\работа\ООО «УГМК-Транс»\ConsoleApplication1\UnitTestProject1\bin\Debug\ConsoleApplication1.exe
+D:\YandexDisk\Учеба\Семестр 8\работа\ООО «УГМК-Транс»\ConsoleApplication1\UnitTestProject1\bin\Debug\ConsoleApplication1.pdb
