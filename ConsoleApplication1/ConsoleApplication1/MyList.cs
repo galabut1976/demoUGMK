@@ -61,7 +61,7 @@ namespace ConsoleApplication1
             {
                 if (size == 0)
                 {
-                    throw new Exception("Список пустой");
+                    return default(T);
                 }
                 return arr[0];
             }
@@ -73,7 +73,7 @@ namespace ConsoleApplication1
             {
                 if (size == 0)
                 {
-                    throw new Exception("Список пустой");
+                    return default(T);
                 }
                 return arr[ptr];
             }
@@ -85,7 +85,7 @@ namespace ConsoleApplication1
             {
                 if (size == 0)
                 {
-                    throw new Exception("Список пустой");
+                    return default(T);
                 }
 
                 if (ptr == 0)
@@ -103,7 +103,7 @@ namespace ConsoleApplication1
             {
                 if (size == 0)
                 {
-                    throw new Exception("Список пустой");
+                    return default(T);
                 }
 
                 if (ptr == size - 1)
@@ -148,6 +148,8 @@ namespace ConsoleApplication1
 
             arr[index] = item;
             size++;
+
+            if (index <= ptr) ptr++; // смещаем указатель при вставке элемента
         }
 
         public void RemoveAt(int index) // удаляем элемент по индексу
@@ -167,6 +169,12 @@ namespace ConsoleApplication1
             if (ptr >= size) // в случае если указатель выходит за верхнюю границу
             {
                 ptr = size - 1;
+            }
+
+            if (index <= ptr) // смещаем указатель при удалении
+            {
+                if (ptr > 0) ptr--;
+                else ptr = size - 1;    
             }
         }
 
@@ -224,6 +232,8 @@ namespace ConsoleApplication1
             {
                 throw new IndexOutOfRangeException("Индекс вне диапазона");
             }
+
+            array = new T[size - arrayIndex];
             arr.CopyTo(array, arrayIndex);
         }
 
@@ -258,7 +268,7 @@ namespace ConsoleApplication1
 
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
         {
-            return arr.GetEnumerator();
+            return (System.Collections.IEnumerator)arr.GetEnumerator();
         }
     }
 }

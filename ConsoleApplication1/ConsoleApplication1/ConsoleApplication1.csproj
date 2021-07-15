@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="IClosedList.cs" />
     <Compile Include="MyList.cs" />
+    <Compile Include="MyList2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

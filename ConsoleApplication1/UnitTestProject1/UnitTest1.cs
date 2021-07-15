@@ -7,12 +7,13 @@ namespace UnitTestProject1
     [TestClass]
     public class UnitTest1
     {
-        MyList<int> list = null;
+        MyList2<int> list = null;
 
         [TestMethod]
         public void TestMethod1()
         {
-            list = new MyList<int>(0, 1, 2, 3 );
+            list = new MyList2<int>();
+            for (int i = 0; i < 4; i++) list.Add(i);
             list.HeadReached += list_HeadReached;
             list.Add(4);
             Assert.AreEqual(5, list.Count); // проверка количества данных
